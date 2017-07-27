@@ -60,38 +60,68 @@ header {
         outline: none; }
     .splash form button {
       border: none;
-      background: #ff6e14;
+      background-color: #ff6e14;
       text-transform: uppercase;
       font-weight: bold;
       color: #FFF;
       font-size: 1em;
       padding: 0.625em 0.5em;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: background-color 350ms; }
       .splash form button:hover {
-        background-color: #ff8138; }
+        background-color: #ff8d47; }
 
-.topfive:after {
-  content: "triangle"; }
+.topfive {
+  padding-bottom: 2.5em;
+  position: relative; }
+  .topfive:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 47%;
+    bottom: -80px;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-top: 40px solid white; }
+  .topfive article {
+    max-width: 367px;
+    margin: 0 auto; }
+  .topfive h2 {
+    margin: 40px 0 21px; }
+  .topfive ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .topfive ul li {
+      display: flex;
+      border-bottom: 1px solid #EEE;
+      margin-bottom: 0.75em;
+      padding-bottom: 0.5em; }
+      .topfive ul li a {
+        flex: 5; }
+      .topfive ul li span {
+        flex: 1;
+        text-align: right;
+        color: #777; }
 
-.topfive article {
-  max-width: 367px;
-  margin: 0 auto; }
-
-.topfive h2 {
-  margin: 2.5em 0 1.3125em; }
-
-.topfive ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-  .topfive ul li {
-    display: flex;
-    border-bottom: 1px solid #EEE;
-    margin-bottom: 0.75em;
-    padding-bottom: 0.5em; }
-    .topfive ul li a {
-      flex: 5; }
-    .topfive ul li span {
-      flex: 1;
-      text-align: right;
-      color: #777; }
+.hits {
+  background: #eeeeee;
+  overflow: hidden;
+  padding-bottom: 50px; }
+  .hits h2 {
+    margin: 58px 0 0; }
+  .hits p {
+    text-align: center;
+    margin: 15px 0 -6px; }
+    .hits p strong {
+      display: inline-block;
+      background: #FFF;
+      padding: 3px 13px;
+      border-radius: 5px;
+      border: 1px solid #777;
+      color: #AA1423;
+      font: 2em "Roboto Slab", serif; }
+    .hits p small {
+      color: #777;
+      font-size: 1em; }
