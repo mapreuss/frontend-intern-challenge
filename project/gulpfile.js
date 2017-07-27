@@ -39,12 +39,6 @@ gulp.task('images', function(){
 	.pipe(gulp.dest('dist/images'))
 });
 
-// Copy fonts to dist dir
-gulp.task('fonts', function() {
-	return gulp.src('app/fonts/**/*')
-	.pipe(gulp.dest('dist/fonts'))
-})
-
 // Clean dist dir
 gulp.task('clean:dist', function() {
 	return del.sync('dist');
@@ -65,7 +59,7 @@ gulp.task('watch', function(){
 // BUILD
 gulp.task('build', function (callback) {
   runSequence('clean:dist', 
-    ['sass', 'useref', 'images', 'fonts'],
+    ['sass', 'useref', 'images'],
     callback
   )
 })

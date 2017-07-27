@@ -1,0 +1,27 @@
+// Colors
+$chaordic-red-color: #AA1423;
+$line-color: #EEE;
+$text-helper-color: #777;
+
+// Fonts
+$title: 'Roboto Slab', serif;
+$body: 'Roboto', sans-serif;
+$browser-context: 16;
+
+// **** NO NEED TO CHANGE ANYTHING BELOW THIS ***//
+
+// FUNCTIONS
+
+// PX to EM
+// Usage: font-size: em(32);
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}

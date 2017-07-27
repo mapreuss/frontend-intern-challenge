@@ -1,0 +1,25 @@
+@import 'variables';
+
+// Resset and main styles
+body{
+    padding: 0;
+    margin: 0;
+    font: em(16) $body;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4 {
+    font-family: $title;
+}
+
+// Header
+header{
+    text-align: center;
+}
+
+// Splash zone
+.splash{
+
+}
