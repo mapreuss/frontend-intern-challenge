@@ -5,6 +5,7 @@ body{
     padding: 0;
     margin: 0;
     font: em(16) $body;
+    background: $contrast-color;
 }
 figure{
     margin: 0;
@@ -12,6 +13,16 @@ figure{
 }
 h1, h2, h3, h4 {
     font-family: $title;
+}
+h2{
+    font-size: em(32px);
+    text-transform: uppercase;
+    color: $chaordic-red-color;
+    text-align: center;
+}
+a{
+    color: $chaordic-red-color;
+    text-decoration: none;
 }
 
 // Header
@@ -70,6 +81,38 @@ header{
             cursor: pointer;
             &:hover{
                 background-color: #ff8138;
+            }
+        }
+    }
+}
+
+.topfive{
+    &:after{
+        content: "triangle";
+    }
+    article{
+        max-width: 367px;
+        margin: 0 auto;
+    }
+    h2{
+        margin: em(40px) 0 em(21px);
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+            display: flex;
+            border-bottom: 1px solid $line-color;
+            margin-bottom: em(12px);
+            padding-bottom: em(8px);
+            a{
+                flex: 5;
+            }
+            span{
+                flex: 1;
+                text-align: right;
+                color: $text-helper-color;
             }
         }
     }
