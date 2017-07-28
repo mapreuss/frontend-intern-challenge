@@ -45,10 +45,11 @@
         <article>
             <p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
 
-            <form action="">
+            <form action="" id="formURL">
                 <label for="longURL" id="labelLongURL">Cole o seu link aqui</label>  
-                <input type="url" name="longURL" id="longURL">
-                <button type="submit">Encurtar</button>
+                <input type="url" name="longURL" id="longURL" required>
+                <input type="reset" value="x" id="resetButton">
+                <button id="submitButton" type="submit">Encurtar</button>
             </form>
         </article>
     </section>

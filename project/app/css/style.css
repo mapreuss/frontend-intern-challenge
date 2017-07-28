@@ -61,6 +61,14 @@ a {
       color: #ff6e14; }
       .splash form input:focus {
         outline: none; }
+      .splash form input.result {
+        color: #FFF; }
+      .splash form input[type=reset] {
+        position: absolute;
+        color: #FFF;
+        right: 30%;
+        cursor: pointer;
+        display: none; }
     .splash form button {
       flex: 1;
       border: none;
@@ -74,6 +82,8 @@ a {
       transition: background-color 350ms; }
       .splash form button:hover {
         background-color: #ff8d47; }
+      .splash form button:focus {
+        outline: none; }
 
 .topfive {
   padding-bottom: 2.5em;

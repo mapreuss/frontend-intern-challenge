@@ -73,6 +73,16 @@ a{
             &:focus{
                 outline: none;
             }
+            &.result{
+                color: $contrast-color;
+            }
+            &[type=reset]{
+                position: absolute;
+                color: $contrast-color;
+                right: 30%;
+                cursor: pointer;
+                display: none;
+            }
         }
         button{
             flex: 1;
@@ -87,6 +97,9 @@ a{
             transition: background-color 350ms;
             &:hover{
                 background-color: lighten($opposite-color, 10%);
+            }
+            &:focus{
+                outline: none;
             }
         }
     }
