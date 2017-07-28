@@ -1,3 +1,4 @@
+// Change colors, fonts and others at 'variables' file
 @import 'variables';
 
 // Resset and main styles
@@ -26,7 +27,7 @@ a{
 }
 
 // Header
-header{
+.chaordic{
     text-align: center;
     margin: 16px 0 5px;
 }
@@ -91,6 +92,7 @@ header{
     }
 }
 
+// Top five
 .topfive{
     padding-bottom: em(40px);
     position: relative;
@@ -133,6 +135,7 @@ header{
     }
 }
 
+// Hits
 .hits{
     background: #eeeeee;
     overflow: hidden;
@@ -159,6 +162,7 @@ header{
     }
 }
 
+// Footer
 footer{
     max-width: 600px;
     margin: 0 auto;

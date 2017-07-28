@@ -7,8 +7,23 @@
     <title>Encurte seus links</title>
 
     <!-- OG TAGS -->
+    <meta property="og:title" content="Encurte seus links"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content="Chaordic"/>
+    <meta property="og:description" content="Ferramenta gratuita para encurtamento de links."/>
+	
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@chaordic">
+    <meta name="twitter:title" content="Encurte seus links">
+    <meta name="twitter:description" content="Ferramenta gratuita para encurtamento de links.">
+    <meta name="twitter:image" content="">
 
     <!-- META TAGS -->
+    <meta name="description" content="Ferramenta gratuita para encurtamento de links.">
+    <meta name="keywords" content="link curto, encurtar link, encurtar url">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Chaordic">
 
     <!--build:css css/styles.min.css-->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
@@ -16,13 +31,18 @@
     <link rel="stylesheet" href="css/style.css">
     <!--endbuild-->
 </head>
-    <header>
-        <figure><a href="http://chaordic.com.br" target="_blank"><img src="images/logo-chaordic.png" alt="Chaordic"></a></figure>
-    </header>
 
+<body>
+    <!-- HEADER WITH CHAORDIC'S LOGO -->
+    <figure class="chaordic"><a href="http://chaordic.com.br" target="_blank"><img src="images/logo-chaordic.png" alt="Chaordic"></a></figure>
+    <!-- /HEADER -->
+
+    <!-- SPLASH ZONE AND FORM -->
     <section class="splash">
-        <article>
+        <header>
             <h1>Encurte seus links.</h1>
+        </header>
+        <article>
             <p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
 
             <form action="">
@@ -32,10 +52,14 @@
             </form>
         </article>
     </section>
+    <!-- /SPLASH -->
 
+    <!-- TOP FIVE ZONE -->
     <section class="topfive">
+        <header>
+            <h2>Top 5</h2>
+        </header>
         <article>
-            <h2>Top 5</h2>    
             <ul>
                 <li><a href="http://chr.dc/xyzxyz" target="_blank">http://chr.dc/xyzxyz</a> <span>i</span></li>
                 <li><a href="http://chr.dc/xyzxyz" target="_blank">http://chr.dc/xyzxyz</a> <span>i</span></li>
@@ -45,25 +69,32 @@
             </ul>
         </article>
     </section>    
+    <!-- /TOP FIVE -->
 
+    <!-- HITS ZONE -->
     <section class="hits">
-        <article>
+        <header>
             <h2>Hits</h2>
+        </header>
+        <article>
             <p><strong>35.713.571</strong></p>
             <p><small>Cliques em links</small></p>
         </article>
     </section>
+    <!-- /HITS -->
 
+    <!-- FOOTER ZONE WITH SOCIAL MEDIA -->
     <footer>
         <a href="http://chaordic.com">chr.dc</a>
         <nav class="social">
             <ul>
-                <li><a class="twitter" href="" target="_blank">Twitter</a></li>
-                <li><a class="fb" href="" target="_blank">Facebook</a></li>
+                <li><a class="twitter" href="https://twitter.com/chaordic" target="_blank">Twitter</a></li>
+                <li><a class="fb" href="https://www.facebook.com/chaordic.com.br/?ref=br_rs" target="_blank">Facebook</a></li>
             </ul>
         </nav>
     </footer>
-<body>
+    <!-- /FOOTER -->
+
     <!--build:js js/main.min.js -->
     
     <!-- endbuild -->
