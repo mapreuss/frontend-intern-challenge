@@ -59,7 +59,7 @@ a{
             color: $opposite-color;
             left: 20px;
             top: 10px;
-            font-size: 15px;
+            font-size: em(15px);
         }
         input{
             flex: 3;
@@ -69,7 +69,7 @@ a{
             font-size: em(16px);
             padding: em(10px) 0 em(8px) 0;
             margin: 0 6px 0 0;
-            color: $contrast-color;
+            color: $opposite-color;
             &:focus{
                 outline: none;
             }

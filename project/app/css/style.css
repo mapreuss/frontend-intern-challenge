@@ -49,7 +49,7 @@ a {
       color: #ff6e14;
       left: 20px;
       top: 10px;
-      font-size: 15px; }
+      font-size: 0.9375em; }
     .splash form input {
       flex: 3;
       border: none;
@@ -58,7 +58,7 @@ a {
       font-size: 1em;
       padding: 0.625em 0 0.5em 0;
       margin: 0 6px 0 0;
-      color: #FFF; }
+      color: #ff6e14; }
       .splash form input:focus {
         outline: none; }
     .splash form button {

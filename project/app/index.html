@@ -46,7 +46,7 @@
             <p>Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</p>
 
             <form action="">
-                <label for="longURL">Cole o seu link aqui</label>  
+                <label for="longURL" id="labelLongURL">Cole o seu link aqui</label>  
                 <input type="url" name="longURL" id="longURL">
                 <button type="submit">Encurtar</button>
             </form>
@@ -96,7 +96,8 @@
     <!-- /FOOTER -->
 
     <!--build:js js/main.min.js -->
-    
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- endbuild -->
 </body>
 </html>
