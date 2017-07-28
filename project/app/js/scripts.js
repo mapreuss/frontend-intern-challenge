@@ -29,14 +29,17 @@ function showLabel(){
 }
 
 function result(){
-    $("#submitButton").animate({ color: 'red' }, 500);
-    
-    $("#submitButton").text("Copiar");
-    
-    
-    $("#longURL").addClass("result");
-    $("#longURL").val("http://chr.dc/xyzxyz");
-    $("#resetButton").fadeIn(350).on("click", function() {reset()});
+    var buttonText = $("#submitButton").text();
+    if(buttonText == "Encurtar"){
+        $("#longURL").addClass("result");
+        $("#longURL").val("http://chr.dc/xyzxyz");
+        $("#resetButton").fadeIn(350).on("click", function() {reset()});
+        $("#submitButton").text("Copiar");
+    } else {
+        $("#longURL").select();
+        document.execCommand('copy');
+        reset();
+    }
 }
 
 function reset(){
@@ -75,7 +78,6 @@ function displayData(json){
         $resultDisplay.empty();
         json = _.orderBy(json, "hits", 'desc');
         json = _.dropRight(json, 5);
-        console.log(json);
         renderSorted("#topfiveList", json);
     }
 }
