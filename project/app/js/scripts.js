@@ -10,6 +10,9 @@ $(document).ready(function(){
         result();
     });
 
+    // Top5
+    topfive();
+
 });
 
 
@@ -43,3 +46,45 @@ function reset(){
     $("#longURL").val("");
     showLabel();
 }
+
+//---
+
+function topfive(){
+
+    jQuery.ajax({
+        'url': "js/links.json",
+        'dataType': "json"
+    })
+    .done(function(data) {
+        displayData(data);
+    })
+    .fail(function() {
+        displayData(false);
+    });
+    
+}
+
+function displayData(json){
+    var $resultDisplay = jQuery('#topfiveList');
+
+    if (!json) {        
+        $resultDisplay.html('<li>Opa, algo deu errado</li>');        
+    } else if (jQuery.isEmptyObject(json)) {        
+        $resultDisplay.html('<li>Sem dados por enquanto</li>');        
+    } else {
+        $resultDisplay.empty();
+        json = _.orderBy(json, "hits", 'desc');
+        json = _.dropRight(json, 5);
+        console.log(json);
+        renderSorted("#topfiveList", json);
+    }
+}
+
+function renderSorted(selector, elements) {
+    $.each(elements, function(index, item) {
+        $(selector).append('<li>' + 
+        '<a href="' + item.url + '" target="_blank">' + item.shortUrl + '</a>' +
+        '<span>' + item.hits + '</span>' +
+        '</li>');
+        });
+};
