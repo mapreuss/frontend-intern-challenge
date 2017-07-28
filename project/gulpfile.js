@@ -39,6 +39,12 @@ gulp.task('images', function(){
 	.pipe(gulp.dest('dist/images'))
 });
 
+// Copy json
+gulp.task('json', function() {
+  return gulp.src('app/js/*.json')
+  .pipe(gulp.dest('dist/js'))
+})
+
 // Clean dist dir
 gulp.task('clean:dist', function() {
 	return del.sync('dist');
@@ -59,7 +65,7 @@ gulp.task('watch', function(){
 // BUILD
 gulp.task('build', function (callback) {
   runSequence('clean:dist', 
-    ['sass', 'useref', 'images'],
+    ['sass', 'useref', 'images', 'json'],
     callback
   )
 })
